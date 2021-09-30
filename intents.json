@@ -1,0 +1,33 @@
+{"intents":  [
+    {
+        "tag": "greetings",
+        "patterns" : ["hello", "hey", "hi", "good day", "nice to meet you", "whats up", "wassup"],
+        "responses": ["Hi!", "Hello!", "What can I do for you", "Nice to meet you"]
+
+    },
+    {
+        "tag": "whoareu",
+        "patterns" : ["who are you", "what are you"],
+        "responses": ["I am a bot made by Tricky"]
+
+    },
+        {
+        "tag": "whomadeyou",
+        "patterns" : ["who made you", "who made u", "who is your master", "who is tricky", "cool boi"],
+        "responses": ["Tricky of course!", "Tricky!!", "My Master Tricky!", "The coolest boi in the world, Tricky"]
+
+    },
+    {
+        "tag": "lol",
+        "patterns" : ["lol", "lmao", "rofl", "kekw", "hehe"],
+        "responses": ["lol", "lmao", "lolmao", "XD", "kekw", "hehe"]
+
+    },
+    {
+      "tag": "good",
+
+      "patterns" : ["good", "good bot", "nice", "yay", "cool bot", "nice bot"],
+
+      "responses" : ["Thanks :D", "Thanks :3",":) Thanks", "Glad you liked me :D"]
+    }
+]}
