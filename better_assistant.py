@@ -33,7 +33,6 @@ class Response:
         with open(filename, "r", encoding="utf8") as file_reader:
             return json.loads(file_reader.read())
 
-
 def wish_me():
     hour = int(datetime.datetime.now().hour)
     if hour >= 0 and hour < 12:
@@ -66,8 +65,8 @@ print("I am Trick. How may I help you?")
 responses = Response("intents.json")
 
 # logic for executing basic tasks
-name = "Rithu"
-if name == "Rithu":
+name = "Tricky"
+if name == "Tricky":
 
     while True:
 
@@ -96,10 +95,10 @@ if name == "Rithu":
                     )
 
                 elif 'play music' in query:
-                    songs_dir = "E:\\Tricky\\rithu songs"
+                    songs_dir = "E:\\Tricky\\Tricky songs"
                     songs = os.listdir(songs_dir)
                     print(songs)
-                    os.startfile(os.path.join(songs_dir, songs[0]))
+                    os.startfile(os.path.join(songs_dir, songs[random.randint(0, len(songs))]))
 
                 elif'the time' in query:
                     strTime = datetime.datetime.now().strftime('%H:%M:%S')
@@ -111,7 +110,7 @@ if name == "Rithu":
 
 
                 elif 'nothing' in query or 'abort' in query or 'stop' in query:
-                    print("Bye Rithu, have a good day!")
+                    print("Bye Tricky, have a good day!")
                     sys.exit()
 
                 elif 'open youtube' in query:
